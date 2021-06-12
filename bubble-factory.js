@@ -26,7 +26,7 @@ export const createBubble = playArenaOffsets => {
   bubble.style.backgroundColor = randomColor;
   bubble.style.borderColor = randomColor;
   // set point value to bubble
-  bubble.value = bubbleSizeValues.max - size;
+  bubble.value = Math.ceil((bubbleSizeValues.max - size) / 10);
 
   return bubble;
 };

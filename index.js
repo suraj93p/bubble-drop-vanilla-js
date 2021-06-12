@@ -113,10 +113,12 @@ const createRandomSizedBubble = () => {
 };
 
 const handleBubbleClick = event => {
-  // add point to tally
-  addPoints(event.target?.value);
-  // destroy bubble
-  destroyBubble(event.target);
+  if (isPlayOn) {
+    // add point to tally
+    addPoints(event.target?.value);
+    // destroy bubble
+    destroyBubble(event.target);
+  }
 };
 
 const handleBubbleAnimationEnd = event => {
