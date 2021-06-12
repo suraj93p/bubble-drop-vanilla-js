@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+  <title>
+    Bubble Drops
+  </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="app-container" class="app-container">
+    <div class="action-container">
+      <div class="score-container">
+        <div class="score-panel">
+          <p id="score" class="score-value"></p>
+        </div>
+        <div class="button-container">
+          <button id="actionBtn" class="action-button"></button>
+        </div>
+      </div>
+      <div class="slider-container">
+        <div class="slider-wrapper">
+          <input type="range" id="speedSlider" class="speed-slider" name="speed-slider" min="10" max="100" value="50" step="1">
+          <span id="sliderSpeed" class="slider-speed"></span>
+        </div>
+        <label for="speed-slider">Speed</label>
+      </div>
+    </div>
+    <div id="play-arena" class="play-arena">
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

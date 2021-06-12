@@ -1,0 +1,43 @@
+@keyframes slide-bubble-1 {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 200;
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.app-container {
+  border: 5px solid black;
+  max-width: 480px;
+  width: 100%;
+  margin: auto;
+}
+
+.action-container {
+  padding: 10px 20px;
+}
+
+.score-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.play-arena {
+  position: relative;
+  height: 200px;
+  border: 4px solid black;
+  z-index: 1;
+}
+
+.bubble {
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
